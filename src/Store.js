@@ -4,6 +4,7 @@ import employeeReducer from './employee';
 // import log from './middleware/log';
 import { logger } from 'redux-logger';
 import error from './middleware/error';
+import {addTask,removeTask,completedTask} from './taskReducer';
 const store = configureStore(
     {
         reducer: {
@@ -20,5 +21,5 @@ const store = configureStore(
     }
    
 );    
- 
+ export const  addTask1 = addTask({});
 export default store;
